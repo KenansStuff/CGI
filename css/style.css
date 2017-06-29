@@ -1,0 +1,340 @@
+body {
+  margin: 0 0 0 0;
+	color: white;
+	}
+
+h1 {
+  font-family: Verdana;
+  font-size: 10vw;
+  text-transform: uppercase;
+  color: white;
+  margin: 0 0 0 0;
+}
+
+h2 {
+  font-family: Verdana;
+  font-size: 4vw;
+  text-transform: uppercase;
+  color: white;
+  margin: 0 0 0 0;
+}
+
+h3 {
+  font-family: Verdana;
+  font-size: 2vw;
+  color: orange;
+  margin: 0 0 0 0;
+  text-align: center;
+  padding-top: 10vw;
+}
+
+p {
+  font-size: 1em;
+  color: black;
+  font-size: 1.5vw;
+  text-align: center;
+  font-family: Arial;
+  padding-bottom: 3vw;
+}
+
+.oben {
+  background-position: top;
+  background-repeat: no-repeat;
+  background-size: 100vw;
+  margin: 0 0 0 0;
+  display: block;
+}
+
+
+.obentext {
+    margin: 20vw 0 0 20vw;
+    position: absolute;
+}
+
+.firsttext {
+  margin: 0vw 20vw 10vw 20vw;
+}
+
+#footer {
+  background-color: deepskyblue;
+  padding: 0 0 0 0;
+}
+
+#footer p {
+  color: white;
+}
+
+
+
+.headerhome {
+  background-image: url("../pictures/img_blender_art_1.jpg");
+  padding: 0 0 50vw 0;
+}
+
+.headerhdr {
+  background-image: url("../pictures/img_hdr_dessert.png");
+  padding: 0 0 50vw 0;
+}
+
+#headerbasic {
+  background-image: url("../pictures/normalmap.jpg");
+  padding: 0 0 50vw 0;
+}
+
+#headeradvanced {
+  background-image: url("../pictures/img_blender_art_3.jpg");
+  padding: 0 0 50vw 0;
+}
+
+#headerimprint {
+  background-image: url("../pictures/img_blender.jpg");
+  padding: 0 0 50vw 0;
+}
+
+#mobile-navigation {
+  text-align: center;
+}
+
+#navbar {
+
+}
+
+.navbar-fixed {
+  position: fixed;
+  top: 0;
+  width: 100%;
+}
+
+.navbar-nopadding {
+  padding: 0 0 0 0;
+}
+
+li {
+  font-family: Arial;
+}
+
+li ul li {
+    width: 20%;
+    margin: 0 0 0 0;
+    background-color: orange;
+    padding: 0 0 0 0;
+    float: left;
+}
+
+ul {
+  list-style: none;
+  table-layout: fixed;
+  width: 100%;
+  border: 0px;
+  background-color: white;
+  margin: 0 0 0 0;
+  padding: 0 0 0 0;
+  border-spacing: 0px;
+}
+
+li a {
+    display: block;
+    color: white;
+    text-decoration: none;
+    text-align: center;
+    vertical-align: middle;
+    margin: 0 0 0 0;
+    font-size: 2vw;
+    padding-top: 1vw;
+    padding-bottom: 1vw;
+    width: 100%;
+}
+
+li a:hover{
+    transition: 0.5s ease;
+    background-color: deepskyblue;
+    color: white;
+}
+
+.active {
+    background-color: white;
+    color: orange;
+}
+
+.spacer {
+  padding-top: 5vw;
+}
+
+.fullsize {
+  width: 100%
+}
+
+.burger {
+  padding-left: 20vw;
+  background-color: green;
+  float: right;
+  overflow: hidden;
+}
+
+input {
+  display: block;
+  width: 100%;
+  font-size: 2vw;
+}
+
+.Bild {
+  width: 100%;
+  height: auto;
+}
+
+
+#navbar-trigger {
+  display: none;
+  visibility: hidden;
+}
+
+#mobile-navigation {
+  display: none;
+  visibility: hidden;
+}
+
+#navbar-trigger:checked  + .navigation {
+    visibility: visible;
+    display: block;
+  }
+}
+
+@media screen and (min-width: 720px){
+  .burger{
+    display: none;
+  }
+
+  #mobile-navigation {
+    display: none;
+    visibility: hidden;
+  }
+
+  #navbar {
+    width: 100%;
+  }
+
+}
+
+#lowernavigation ul li a {
+  background-color: deepskyblue;
+  font-family:
+}
+
+#lowernavigation li a:hover{
+    transition: 0.5s ease;
+    background-color: white;
+    color: deepskyblue;
+}
+
+#lowernavigation .active{
+
+    background-color: white;
+    color: orange;
+}
+
+@media screen and (max-width: 720px){
+
+  .burger{
+    display: block;
+  }
+
+  .firsttext {
+    margin-left: 0;
+    margin-right: 0;
+  }
+
+  li {
+    float: inherit;
+    width: 100%;
+  }
+
+  li a {
+    padding-top: 0px;
+    padding-bottom: 0px;
+    font-size: 6vw;
+    font-family: Arial;
+
+  }
+
+  ul {
+    font-size: 6vw;
+  }
+
+  .burger {
+    height: 6vw;
+  }
+
+  h3 {
+    font-size: 5vw;
+  }
+
+  p {
+    font-size: 4vw;
+  }
+
+  .navigation {
+    visibility: hidden;
+    display: none;
+  }
+
+  #mobile-navigation {
+    display: block;
+    visibility: visible;
+  }
+
+
+
+
+}
+
+@media screen and (max-width: 480px){
+
+  li {
+    float: inherit;
+    width: 100%;
+  }
+
+  li a {
+    padding-top: 0px;
+    padding-bottom: 0px;
+    font-size: 6vw;
+  }
+
+  h3 {
+    font-size: 5vw;
+  }
+
+  p {
+    font-size: 4vw;
+  }
+}
+
+@media screen and (max-width: 200px){
+
+  li a {
+    font-size: 10vw;
+  }
+
+  h3 {
+    font-size: 10vw;
+  }
+
+  p {
+    font-size: 7vw;
+  }
+}
+
+@media screen and (max-width: 120px){
+
+  li a {
+    font-size: 15vw;
+  }
+
+  h3 {
+    font-size: 15vw;
+  }
+
+  p {
+    font-size: 10vw;
+  }
+}
